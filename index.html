@@ -8,8 +8,12 @@
   </head>
   <body>
     <div class="instagram-wrapper">
-        <div class="instagram-phone">
-            <img src="img/diotagram-celular.png" alt="celular Diotagram">
+        <div class="instagram-phone bg-cell">
+            <div class="instagram-slide">
+                <img src="img/diotagram-celular-4.png" class="Slides instagram-fading"alt="celular Diotagram">
+                <img src="img/diotagram-celular-5.png" class="Slides instagram-fading">
+                <img src="img/diotagram-celular-6.png" class="Slides instagram-fading">
+            </div>
         </div>
             <div class="instagram-continue">
                 <div class="group">
@@ -38,6 +42,22 @@
                 </div>
             </div>
     </div>
+      <script>
+        var instaSlides = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("Slides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          instaSlides++;
+          if (instaSlides > x.length) {instaSlides = 1}    
+          x[instaSlides-1].style.display = "block";  
+          setTimeout(carousel, 9000);    
+        }
+        </script>
 
 
 </body>

@@ -29,8 +29,26 @@ body{
     justify-content: center;
     width: 50%;
 }
+.bg-cell{
+    align-self:center;
+    background-image:url('img/diotagram-celular-3.png');
+    background-repeat: no-repeat;
+    background-position:0 0;
+    background-size:29.400rem 39.915rem;
+    /*background-size:454px 618px;*/
+}
 .instagram-phone img{
-    height: 50rem;
+    height: 40rem;
+}
+.instagram-fading{
+    animation:fading 10s infinite
+}
+
+@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+
+.instagram-slide{
+    
+    position: relative;
 }
 .instagram-continue{
     display: flex;
@@ -115,7 +133,24 @@ body{
     .instagram-wrapper{
         width: 90%;
     }
+    .instagram-phone img {
+        margin-right: 49px;
+    }
 }
+
+@media(max-width: 768px){
+    .instagram-phone img{
+        margin-left: 268px;
+    }
+    .bg-cell{
+        align-self:center;
+        background-image:url('img/diotagram-celular-3.png');
+        background-repeat: no-repeat;
+        background-position:0 0;
+        background-size:29.400rem 39.915rem;
+    }
+}
+
 @media(max-width: 650px){
     body{
         background-color: #ffffff;
