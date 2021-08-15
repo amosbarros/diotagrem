@@ -127,6 +127,7 @@ body{
 .app-download:nth-child(2){
     background-image: url('img/apple-button.png');
 }
+
 /*  media queries */
 
 @media(max-width: 1024px){
